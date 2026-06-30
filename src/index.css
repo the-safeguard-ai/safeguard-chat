@@ -1,0 +1,43 @@
+@import "tailwindcss";
+/* Canonical brand tokens (neutrals, green accent, Geist, base, dark mode) come
+   from the shared package so chat stays in lockstep with landing + admin. The
+   Grok-like minimal surface is unchanged — it's just driven by shared tokens
+   now. See docs/DESIGN_SYSTEM.md. */
+@import "@the-safeguard/ui/tokens.css";
+
+/*
+  Chat keeps `canvas` as its name for the app background (used across the
+  composer/bubble components); alias it to the shared --bg token. Every other
+  name chat uses (ink / muted / surface / hair / accent …) is already provided
+  by the shared @theme.
+*/
+@theme inline {
+  --color-canvas: var(--bg);
+}
+
+@keyframes sg-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.sg-fade-in {
+  animation: sg-fade-in 0.2s ease-out;
+}
+
+@keyframes sg-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+.sg-caret {
+  animation: sg-blink 1s steps(2, start) infinite;
+}
