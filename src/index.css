@@ -3,7 +3,7 @@
    from the shared package so chat stays in lockstep with landing + admin. The
    Grok-like minimal surface is unchanged — it's just driven by shared tokens
    now. See docs/DESIGN_SYSTEM.md. */
-@import "@the-safeguard/ui/tokens.css";
+@import "@the-safeguard-ai/ui/tokens.css";
 
 /*
   Chat keeps `canvas` as its name for the app background (used across the

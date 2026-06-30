@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Loader2 } from "lucide-react";
-import { LogoMark } from "@the-safeguard/ui/brand";
+import { LogoMark } from "@the-safeguard-ai/ui/brand";
 import { useAuth } from "../auth/AuthContext";
 
 export function Login() {

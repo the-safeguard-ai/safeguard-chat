@@ -6,7 +6,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/the-safeguard/safeguard-chat.git"
+    "url": "git+https://github.com/the-safeguard-ai/safeguard-chat.git"
   },
   "scripts": {
     "dev": "vite",
@@ -16,7 +16,7 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@the-safeguard/ui": "^0.1.0",
+    "@the-safeguard-ai/ui": "^0.1.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
     "react": "^19.0.0",

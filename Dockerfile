@@ -1,5 +1,5 @@
 # SafeGuard AI frontend — build with Bun, serve static with nginx.
-# Needs a GitHub token (read:packages) to install @the-safeguard/* from GitHub Packages.
+# Needs a GitHub token (read:packages) to install @the-safeguard-ai/* from GitHub Packages.
 FROM oven/bun:1-alpine AS build
 WORKDIR /app
 COPY package.json .npmrc ./

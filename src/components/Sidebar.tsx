@@ -7,7 +7,7 @@ import {
   SquarePen,
   Trash2,
 } from "lucide-react";
-import { LogoMark } from "@the-safeguard/ui/brand";
+import { LogoMark } from "@the-safeguard-ai/ui/brand";
 import type { AuthUser } from "../lib/api";
 import type { Conversation } from "../lib/store";
 import { cn } from "../lib/utils";

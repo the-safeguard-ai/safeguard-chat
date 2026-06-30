@@ -8,7 +8,7 @@ on:
   pull_request:
 
 env:
-  IMAGE: ghcr.io/the-safeguard/chat
+  IMAGE: ghcr.io/the-safeguard-ai/chat
 
 jobs:
   build:
