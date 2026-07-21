@@ -13,10 +13,6 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-    "baseUrl": ".",
-    "paths": {
-      "@safeguard/ui/brand": ["@the-safeguard-ai/ui/brand"]
-    }
+    "verbatimModuleSyntax": true
   }
 }
