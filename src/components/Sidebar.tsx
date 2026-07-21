@@ -4,10 +4,11 @@ import {
   Clock,
   LogOut,
   Search,
+  Settings,
   SquarePen,
   Trash2,
 } from "lucide-react";
-import { LogoMark } from "@the-safeguard-ai/ui/brand";
+import { LogoMark } from "@safeguard/ui/brand";
 import type { AuthUser } from "../lib/api";
 import type { Conversation } from "../lib/store";
 import { cn } from "../lib/utils";
@@ -20,6 +21,7 @@ interface SidebarProps {
   user: AuthUser | null;
   onNewChat: () => void;
   onOpenSearch: () => void;
+  onOpenSettings: () => void;
   onSelect: (id: string) => void;
   onDelete: (id: string) => void;
   onLogout: () => void;
@@ -64,6 +66,7 @@ export function Sidebar(props: SidebarProps) {
       <nav className="px-2.5">
         <NavItem icon={<Search size={18} />} label="Search" onClick={props.onOpenSearch} />
         <NavItem icon={<SquarePen size={18} />} label="New Chat" onClick={props.onNewChat} />
+        <NavItem icon={<Settings size={18} />} label="Settings" onClick={props.onOpenSettings} />
       </nav>
 
       <div className="mt-3 flex items-center gap-1.5 px-4 pb-1 text-[13px] font-medium text-[var(--color-muted)]">
@@ -122,6 +125,9 @@ function CollapsedRail(props: SidebarProps) {
       </IconBtn>
       <IconBtn label="History" onClick={props.onOpenSearch}>
         <Clock size={19} />
+      </IconBtn>
+      <IconBtn label="Settings" onClick={props.onOpenSettings}>
+        <Settings size={19} />
       </IconBtn>
       <div className="flex-1" />
       <IconBtn label="Expand sidebar" onClick={props.onToggle}>

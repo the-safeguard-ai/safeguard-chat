@@ -151,6 +151,7 @@ export function ChatApp() {
         user={user}
         onNewChat={newChat}
         onOpenSearch={() => setSearchOpen(true)}
+        onOpenSettings={() => navigate("/settings")}
         onSelect={selectConversation}
         onDelete={deleteConversation}
         onLogout={logout}

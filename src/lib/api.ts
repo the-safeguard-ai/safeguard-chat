@@ -38,7 +38,7 @@ interface AuthResponse {
   user: AuthUser;
 }
 
-async function api<T>(path: string, init?: RequestInit): Promise<T> {
+export async function api<T>(path: string, init?: RequestInit): Promise<T> {
   const token = tokens.access();
   const res = await fetch(`${CONTROL_PLANE_URL}/api${path}`, {
     ...init,
